@@ -1,4 +1,14 @@
-<section>
-    <form action="">
-        <input type="text" placeholder="Filter by city">
-        <button
+import { Routes } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+export const routes: Routes = [
+    { 
+        path: '', 
+        component: HomeComponent,
+        title: 'Home Page'
+    },
+    {
+    path: 'details/:id', 
+    component: HomeComponent,
+    title: 'Details Page'
+    }
+];

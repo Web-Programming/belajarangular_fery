@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "belajar_Angular": {
+    "belajar_angular": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/belajar-angular",
+            "outputPath": "dist/belajar_angular",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -29,12 +29,7 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [],
-            "server": "src/main.server.ts",
-            "prerender": true,
-            "ssr": {
-              "entry": "server.ts"
-            }
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -64,10 +59,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "belajar_Angular:build:production"
+              "buildTarget": "belajar_angular:build:production"
             },
             "development": {
-              "buildTarget": "belajar_Angular:build:development"
+              "buildTarget": "belajar_angular:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -99,6 +94,6 @@
     }
   },
   "cli": {
-    "analytics": "44708b34-f5e7-472a-83e9-c4929b31e339"
+    "analytics": "7cfb224e-b6eb-425f-9927-4bf1c4c46752"
   }
 }
